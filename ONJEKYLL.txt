@@ -56,6 +56,11 @@ is NECESSARY for liquid tags to be processed
 
 check in _site directory what was built
 
+# Start
+
+> bundle exec jekyll serve --watch
+
+go to: 127.0.0.1:4000
 
 
 
