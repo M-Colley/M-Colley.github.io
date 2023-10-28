@@ -273,7 +273,7 @@ body {
 		 z-index: 1;
 	}
 	 .css-art--pie-1 h3 {
-		 padding-left: -2em;
+		 padding-left: -3em;
 	}
 	 .css-art--pie-1 ul {
 		 top: 4em;
@@ -326,7 +326,7 @@ body {
 		 position: absolute;
 		 z-index: 5;
 		 display: inline-block;
-		 max-width: 16em;
+		 max-width: 12em;
 	}
 	 .pie-1-2-intersect:before, .pie-2-3-intersect:before, .pie-3-1-intersect:before, .pie-1-2-intersect:after, .pie-2-3-intersect:after, .pie-3-1-intersect:after {
 		 content: '';
@@ -412,7 +412,7 @@ body {
 		 transform: translate(0, 50%);
 	}
 	 .pie-main-intersection {
-		 font-size: 0.875em;
+		 font-size: 1.0em;
 		 position: absolute;
 		 top: 50%;
 		 left: 50%;
