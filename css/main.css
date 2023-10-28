@@ -433,5 +433,10 @@ body {
 		 overflow: hidden;
 		 height: 1px;
 	}
+
+	 .css-art--pie a {
+  		color: black;
+	}
 }
- 
+
+
