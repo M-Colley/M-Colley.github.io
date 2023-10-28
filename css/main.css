@@ -150,6 +150,7 @@ body {
 }
  .css-art--3-pie-venn-diagram[class] {
 	 font-size: 1rem;
+	 color: #000;  /* Setting text color to black */
 }
  .css-art--3-pie-venn-diagram {
 	 position: relative;
@@ -240,6 +241,7 @@ body {
 	 .css-art--3-pie-venn-diagram li {
 		 font-size: 0.875em;
 		 padding: 0 0 0.25em;
+		 color: #000;  /* Setting text color to black */
 	}
 	 .css-art--pie {
 		 position: absolute;
