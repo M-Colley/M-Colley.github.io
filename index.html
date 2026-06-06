@@ -44,6 +44,7 @@
             <li><a href="#about">About</a></li>
 			 <li><a href="#research">Research Agenda</a></li>
               <li><a href="#news">News</a></li>
+			  <li><a href="#resources">Resources</a></li>
             <li><a href="#pubs">Publications</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -164,6 +165,18 @@
   </div>
 </div>
 <br>
+
+<!-- TOGGLE BUTTON -->
+<div class="row">
+  <div class="col-md-12 text-center">
+    <button id="toggleNewsBtn" class="btn btn-default" onclick="toggleNews()" style="margin-bottom: 20px;">
+      Show older news ⬇
+    </button>
+  </div>
+</div>
+
+<!-- HIDDEN WRAPPER FOR OLDER NEWS -->
+<div id="olderNews" style="display: none;">
 		
 		<div class="row">
   <div class="col-md-3">
@@ -474,11 +487,41 @@ Behaviour & Information Technology</a>.
            <div class="col-md-9">
                I attended AutoUI'23 where I served as one of the <a href="https://www.auto-ui.org/23/organizers/">AutoUI 2023 Workshop Chairs</a>.
             </div>
+
        </div>
 	   <br>
+</div> <!-- END OF HIDDEN WRAPPER -->
 
+<!-- SCRIPT TO TOGGLE NEWS -->
+<script>
+function toggleNews() {
+    var olderNews = document.getElementById("olderNews");
+    var btn = document.getElementById("toggleNewsBtn");
+    
+    if (olderNews.style.display === "none") {
+        olderNews.style.display = "block";
+        btn.innerHTML = "Show less news ⬆";
+    } else {
+        olderNews.style.display = "none";
+        btn.innerHTML = "Show older news ⬇";
+    }
+}
+</script>
 
 				<hr class="featurette-divider"  id="research"/>
+
+Why this works perfectly:
+
+1.  No External Dependencies: Because your Bootstrap JS is commented out at the
+    bottom of your file, standard Bootstrap collapsing wouldn't work. This tiny
+    Vanilla JavaScript script ensures the button works perfectly on all browsers
+    regardless.
+2.  Clean UI: The button is centered (text-center) and uses Bootstrap's native
+    btn btn-default styling, meaning it will automatically match the look and
+    feel of your website.
+3.  Dynamic Text: When users click the button, the text intuitively changes from
+    "Show older news ⬇" to "Show less news ⬆".
+
 		<h3 class="featurette-heading">Research Agenda</h3>
 		<p>
    <div class="content-wrapper">
@@ -569,7 +612,53 @@ Behaviour & Information Technology</a>.
 		
 
 
+<!--******************************************************-->
+        <hr class="featurette-divider" id="resources"/>
+        <h3 class="featurette-heading">Resources for Students & Projects</h3>
+        <br>
+        
+        <div class="row section-block prose-section">
+            <div class="col-md-12">
+                <p>Strong projects usually begin with a solid grounding in HCI theory, methods, and related work. The following readings are useful starting points:</p>
+            </div>
+        </div>
+        <br>
 
+        <div class="row reading-groups">
+            <!-- Column 1 -->
+            <div class="col-md-4 reading-group">
+                <h4 class="reading-group-title">HCI foundations</h4>
+                <ul class="reading-list">
+                    <li>Stanford HCI Qual Exam Reading List: <a href="https://docs.google.com/document/d/1_FE08_fpGvunhrLy9z_xCJJidulmC9kfBIPDrfxVpCM/edit?tab=t.0" target="_blank" rel="noopener">Google Doc</a></li>
+                    <li>Introduction to Human-Computer Interaction (by Kasper Hornbæk, Per Ola Kristensson, and Antti Oulasvirta): <a href="https://academic.oup.com/book/60808" target="_blank" rel="noopener">Oxford University Press</a> (open access)</li>
+                    <li>The Encyclopedia of Human–Computer Interaction: <a href="https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed" target="_blank" rel="noopener">Interaction Design Foundation</a></li>
+                    <li>The Design of Everyday Things (by Don Norman): <a href="https://www.nngroup.com/books/design-everyday-things-revised/" target="_blank" rel="noopener">Nielsen Norman Group</a></li>
+                    <li>Foundations and Trends® in Human–Computer Interaction series: <a href="https://www.emerald.com/fthci" target="_blank" rel="noopener">Emerald Publishing</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-md-4 reading-group">
+                <h4 class="reading-group-title">Research methods and evidence</h4>
+                <ul class="reading-list">
+                    <li>Research Contributions in Human-Computer Interaction (by Jacob O. Wobbrock and Julie A. Kientz): <a href="https://dl.acm.org/doi/10.1145/2907069" target="_blank" rel="noopener">ACM DL</a></li>
+                    <li>Research Methods in Human-Computer Interaction (by Jonathan Lazar, Jinjuan Heidi Feng, and Harry Hochheiser): <a href="https://www.sciencedirect.com/book/9780128053904/research-methods-in-human-computer-interaction" target="_blank" rel="noopener">Science Direct</a></li>
+                    <li>Modern Statistical Methods for HCI (edited by Judy Robertson and Maurits Kaptein): <a href="https://link.springer.com/book/10.1007/978-3-319-26633-6" target="_blank" rel="noopener">Springer Nature</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-md-4 reading-group">
+                <h4 class="reading-group-title">Interaction and computational design</h4>
+                <ul class="reading-list">
+                    <li>Pick, Click, Flick!: The Story of Interaction Techniques (by Brad A. Myers): <a href="https://dl.acm.org/doi/book/10.1145/3617448" target="_blank" rel="noopener">ACM DL</a></li>
+                    <li>Computational Interaction (edited by Antti Oulasvirta, Per Ola Kristensson, and Xiaojun Bi): <a href="https://academic.oup.com/book/34845" target="_blank" rel="noopener">Oxford University Press</a></li>
+                    <li>Bayesian Methods for Interaction and Design (edited by John H. Williamson, Antti Oulasvirta, Per Ola Kristensson, and Nikola Banovic): <a href="https://www.cambridge.org/core/books/bayesian-methods-for-interaction-and-design/721123C200F67FD94DA8DDFD561162A8" target="_blank" rel="noopener">Cambridge University Press</a></li>
+                    <li>3D User Interfaces: Theory and Practice (by Joseph J. LaViola Jr., Ernst Kruijff, Ryan P. McMahan, Doug A. Bowman, and Ivan P. Poupyrev): <a href="https://books.google.com/books/about/3D_User_Interfaces.html?id=fxWSDgAAQBAJ" target="_blank" rel="noopener">Google Books</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
 
 
         <!--******************************************************-->
