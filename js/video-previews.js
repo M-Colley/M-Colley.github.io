@@ -8,7 +8,7 @@ videoStyles.innerHTML = `
         position: relative;
         cursor: pointer;
         overflow: hidden;
-        width: 180px; /* Matches your existing image width */
+        width: 240px; /* A bit larger than the static publication images */
         border-radius: 4px; /* Optional: adds a slight rounding to match typical Bootstrap polaroids */
     }
 
